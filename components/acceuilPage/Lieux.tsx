@@ -10,9 +10,9 @@ const Lieux = () =>{
           renderItem={({item})=>(
       <View className='h-52 mr-3'>
         
-        <TouchableOpacity className='h-36 w-64 object-cover flex items-center justify-center'
+        <TouchableOpacity className='h-36 w-64 object-cover flex items-center justify-center border rounded-2xl'
         onPress={()=> router.push('/screens/Details')}>
-            <ImageBackground className='h-36 w-64 items-center border rounded-xl ' source={item.Image}>
+            <ImageBackground className='h-36 w-64 items-center border ' source={item.Image}>
               <View className='flex justify-center p-2'>
                 <InformationsLieux Ville={item.Ville} type={item.type} tarifs={item.tarifs}/>
               </View>
